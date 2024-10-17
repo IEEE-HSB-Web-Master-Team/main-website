@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import './App.css'
 import WOW from 'wow.js';
 import 'animate.css';
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import About from './components/About/About';
 
@@ -31,6 +31,7 @@ function App() {
 
   return (
     <>
+      <RouterProvider router={routers}></RouterProvider>
     </>
   )
 }
