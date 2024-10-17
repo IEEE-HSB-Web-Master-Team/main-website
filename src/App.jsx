@@ -2,6 +2,18 @@ import { useEffect } from 'react'
 import './App.css'
 import WOW from 'wow.js';
 import 'animate.css';
+import { createBrowserRouter } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
+import About from './components/About/About';
+
+let routers = createBrowserRouter([
+  {
+    path: '' , element:<Layout/> , children:[
+      {index:true, element:<About/>},
+      {path:'about' , element:<About/>}
+    ]
+  }
+])
 
 function App() {
 
@@ -19,7 +31,6 @@ function App() {
 
   return (
     <>
-
     </>
   )
 }
