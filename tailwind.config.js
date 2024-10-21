@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/images/BG.svg')",
+        'hero-image': "url('/src/assets/images/hero section.jpg')",
+      },
       fontFamily: {
         // Ubuntu Fonts
         'ubuntu': ['"Ubuntu"', 'sans-serif'],
