@@ -1,21 +1,28 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
-    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-    theme: {
-        extend: {
-            fontFamily: {
-                // Ubuntu Fonts
-                ubuntu: ['"Ubuntu"', "sans-serif"],
-                "ubuntu-bold": ['"Ubuntu Bold"', "sans-serif"],
-                "ubuntu-bold-italic": ['"Ubuntu Bold Italic"', "sans-serif"],
-                "ubuntu-light": ['"Ubuntu Light"', "sans-serif"],
-                "ubuntu-light-italic": ['"Ubuntu Light Italic"', "sans-serif"],
-                "ubuntu-medium": ['"Ubuntu Medium"', "sans-serif"],
-                "ubuntu-medium-italic": [
-                    '"Ubuntu Medium Italic"',
-                    "sans-serif",
-                ],
-                "ubuntu-regular": ['"Ubuntu Regular"', "sans-serif"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+  theme: {
+    extend: {
+      colors: {
+        'custom-light-blue': '#F3F7FA',
+        'custom-dark-blue': '#207DA9',
+        'custom-dark2-blue': '#115579',
+      },
+      fontFamily: {
+        // Ubuntu Fonts
+        'ubuntu': ['"Ubuntu"', 'sans-serif'],
+        'ubuntu-bold': ['"Ubuntu Bold"', 'sans-serif'],
+        'ubuntu-bold-italic': ['"Ubuntu Bold Italic"', 'sans-serif'],
+        'ubuntu-light': ['"Ubuntu Light"', 'sans-serif'],
+        'ubuntu-light-italic': ['"Ubuntu Light Italic"', 'sans-serif'],
+        'ubuntu-medium': ['"Ubuntu Medium"', 'sans-serif'],
+        'ubuntu-medium-italic': ['"Ubuntu Medium Italic"', 'sans-serif'],
+        'ubuntu-regular': ['"Ubuntu Regular"', 'sans-serif'],
 
                 // Helvetica Fonts
                 helvetica: ['"Helvetica"', "sans-serif"],
@@ -54,3 +61,4 @@ export default {
     },
     plugins: [],
 };
+

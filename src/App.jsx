@@ -7,6 +7,12 @@ import Layout from "./components/Layout/Layout";
 import About from "./components/About/About";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./App.css";
+
+import Home from "./components/Home/Home";
+
 const queryClient = new QueryClient();
 
 let routers = createBrowserRouter([
@@ -14,8 +20,9 @@ let routers = createBrowserRouter([
         path: "",
         element: <Layout />,
         children: [
-            // { index: true, element: <About /> },
+            { index: true, element: <Home /> },
             { path: "about", element: <About /> },
+            { index: "home", element: <Home /> },
         ],
     },
 ]);
