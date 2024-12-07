@@ -16,7 +16,7 @@ export default function AboutHero() {
             <p className='text-[14px] leading-[24px] text-[#aeaeae] '>IEEE, Institute of Electrical and Electronics Engineers, is the biggest professional association that is dedicated to advancing technological innovation and excellence. It was formed in 1963 with roots that go back to 1884.
             IEEE Helwan Student Branch, is the 3rd student Branch in Egypt Section. Known for its annual Academic Program.</p>
           </div>
-          <div className='md:space-x-6 md:space-y-0 space-y-3 md:mt-10 mt-5 ' >
+          <div className='flex flex-col md:flex-row justify-center items-center md:space-x-6 md:space-y-0 space-y-3 md:mt-10 mt-5 ' >
               <button className='w-[85vw] md:w-[300px] lg:w-[316px] box-border border-4 border-[#207da9] hover:border-transparent border-solid h-[72px] rounded-lg text-[24px] tracking-wide font-uni-sans-heavy text-white bg-[#207da9] hover:text-white hover:bg-[#115579] hover:shadow-lg transform transition-all wow animate__fadeInUp ' >join us</button>
               <button className='w-[85vw] md:w-[300px] lg:w-[316px] box-border border-4 border-[#207da9] hover:border-transparent border-solid h-[72px] rounded-lg text-[24px] tracking-wide font-uni-sans-heavy text-[#207da9] bg-white hover:text-white hover:bg-[#115579] hover:shadow-lg transform transition-all wow animate__fadeInUp ' data-wow-delay=".1s" >contact us</button>
           </div>
