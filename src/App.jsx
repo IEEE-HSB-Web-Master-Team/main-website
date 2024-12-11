@@ -13,6 +13,7 @@ import "./App.css";
 
 import Home from "./components/Home/Home";
 import Notfound from "./components/NotFound/NotFound";
+import Events from "./components/Events/Events";
 
 const queryClient = new QueryClient();
 
@@ -23,7 +24,8 @@ let routers = createBrowserRouter([
         children: [
             { index: true, element: <Home /> },
             { path: "home", element: <Home /> },
-            {path: "*", element:<Notfound/>}
+            { path: "events", element: <Events /> },
+            { path: "*", element: <Notfound /> }
         ],
     },
 ]);
