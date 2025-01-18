@@ -1,22 +1,55 @@
-
-
-
-
-
-
-
-
-*{
+* {
     box-sizing: border-box;
 }
 
 .underLineTitle::after {
-    content: ""; 
-    display: block; 
-    width: 90%; 
-    height: 5px; 
-    background-color: currentColor; 
+    content: "";
+    display: block;
+    width: 90%;
+    height: 5px;
+    background-color: currentColor;
     border-radius: 5px;
     margin: auto;
     margin-top: 5px;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: rgb(207, 208, 209) !important; /* Adjust color */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swiper-button-prev {
+    left: 10px; /* Position for left button */
+}
+
+.swiper-button-next {
+    right: 10px; /* Position for right button */
+}
+
+/* Optional: Add hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: white !important; /* Change color on hover */
 }

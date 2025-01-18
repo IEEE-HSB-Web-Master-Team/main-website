@@ -25,7 +25,7 @@ let routers = createBrowserRouter([
             { index: true, element: <Home /> },
             { path: "home", element: <Home /> },
             { path: "events", element: <Events /> },
-            { path: "*", element: <Notfound /> }
+            { path: "*", element: <Notfound /> },
         ],
     },
 ]);
