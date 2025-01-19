@@ -17,6 +17,9 @@ export default {
         'custom-light-blue': '#F3F7FA',
         'custom-dark-blue': '#207DA9',
         'custom-dark2-blue': '#115579',
+        'customGray': '#C3C3C3',
+        'customGray2': '#9FD1E9',
+
       },
       fontFamily: {
         // Ubuntu Fonts
